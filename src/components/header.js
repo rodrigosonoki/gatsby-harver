@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const Container = styled.div`
+const Container = styled.header`
   background: #fff;
   display: flex;
   justify-content: space-between;
@@ -13,6 +13,7 @@ const Container = styled.div`
   border-bottom: 1px solid #c9c9c9;
   z-index: 9999;
   padding: 0 60px;
+  margin-bottom: 80px;
 `
 
 const LogoContainer = styled.div`
@@ -43,6 +44,15 @@ const ButtonContainer = styled.nav`
   ul a {
     text-decoration: none;
   }
+
+  ul a:visited {
+    color: #414960;
+  }
+`
+
+const BackgroundContainer = styled.div`
+  width: 100%;
+  height: 80px;
 `
 
 function Header() {
@@ -50,10 +60,12 @@ function Header() {
     <div>
       <Container>
         <LogoContainer>
-          <img
-            src="https://api.adorable.io/avatars/48/abott@adorable.png"
-            alt="brand-logo"
-          />
+          <Link to="/">
+            <img
+              src="https://api.adorable.io/avatars/48/abott@adorable.png"
+              alt="brand-logo"
+            />
+          </Link>
         </LogoContainer>
         <ButtonContainer>
           <ul>
@@ -67,6 +79,7 @@ function Header() {
           </ul>
         </ButtonContainer>
       </Container>
+      <BackgroundContainer />
     </div>
   )
 }

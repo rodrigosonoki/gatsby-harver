@@ -1,7 +1,12 @@
 import React from "react"
+import Layout from "../templates/layout"
 
 function AboutUs() {
-  return <div>AboutUs</div>
+  return (
+    <div>
+      <Layout>About Us</Layout>
+    </div>
+  )
 }
 
 export default AboutUs
