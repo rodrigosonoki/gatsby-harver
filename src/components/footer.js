@@ -10,6 +10,12 @@ const Container = styled.footer`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
+
+  @media only screen and (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const Column = styled.div`
@@ -50,6 +56,21 @@ const Column = styled.div`
     width: 148px;
     display: flex;
     justify-content: space-between;
+  }
+
+  /* RESPONSIVE */
+  @media only screen and (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `
 
