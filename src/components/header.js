@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const Container = styled.header`
-  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +13,7 @@ const Container = styled.header`
   z-index: 9999;
   padding: 0 60px;
   margin-bottom: 80px;
+  background: #fff;
 `
 
 const LogoContainer = styled.div`
@@ -23,10 +23,7 @@ const LogoContainer = styled.div`
 `
 
 const ButtonContainer = styled.nav`
-  width: 480px;
-
   display: flex;
-  justify-content: center;
 
   ul {
     list-style: none;
@@ -36,6 +33,8 @@ const ButtonContainer = styled.nav`
     font-size: 14px;
     font-family: Montserrat;
     font-weight: bold;
+    justify-content: space-between;
+    width: 400px;
   }
   ul li {
     padding: 20px;
