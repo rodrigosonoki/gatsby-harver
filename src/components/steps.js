@@ -38,7 +38,7 @@ const Card = styled.div`
 
   p {
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 12px;
   }
 `
 
