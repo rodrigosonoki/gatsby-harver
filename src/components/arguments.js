@@ -8,6 +8,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 48px 0 60px;
 `
 
 const Cards = styled.div`
@@ -15,7 +16,7 @@ const Cards = styled.div`
   justify-content: space-between;
   height: 100%;
   align-items: center;
-
+  text-align: center;
   width: 960px;
 `
 
@@ -44,8 +45,8 @@ function Arguments() {
     <div>
       <Container>
         <Title
-          h1="Lorem ipsum dolor sit amet"
-          p="Cras tempor nec nulla sit amet scelerisque. Duis finibus lacus sit amet dui finibus vehicula eu eu dolor."
+          h1="É tipo criar a sua própria loja."
+          p="Só que sem riscos e nem custos adicionais. É sério!"
         ></Title>
         <Cards>
           <Card
@@ -60,7 +61,7 @@ function Arguments() {
           ></Card>
           <Card
             emoji="👩🏼‍💻"
-            title="Nosso atendimento está pronto pra te ajudar"
+            title="Estamos prontos pra te ajudar"
             description="Quando precisar de algum tipo de suporte, nosso chat está disponível 24h por dia."
           ></Card>
         </Cards>

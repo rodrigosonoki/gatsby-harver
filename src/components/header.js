@@ -34,7 +34,7 @@ const ButtonContainer = styled.nav`
     font-family: Montserrat;
     font-weight: bold;
     justify-content: space-between;
-    width: 400px;
+    width: 320px;
   }
   ul li {
     padding: 20px;

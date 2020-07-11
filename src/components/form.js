@@ -4,7 +4,12 @@ import Title from "../components/title"
 
 const Container = styled.div`
   height: 100%;
-  background: #f17174;
+  background: rgb(255, 153, 102);
+  background: linear-gradient(
+    144deg,
+    rgba(255, 153, 102, 1) 0%,
+    rgba(241, 113, 116, 1) 65%
+  );
   text-align: center;
   display: flex;
   justify-content: center;
@@ -65,7 +70,12 @@ const Container = styled.div`
     width: 100%;
     border: none;
     font-family: "Montserrat";
-    background-color: #f17174;
+    background: rgb(255, 153, 102);
+    background: linear-gradient(
+      144deg,
+      rgba(255, 153, 102, 1) 0%,
+      rgba(241, 113, 116, 1) 65%
+    );
     transition: 0.3s;
     color: #fff;
     font-weight: bold;
