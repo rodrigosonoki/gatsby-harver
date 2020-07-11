@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Title from "../components/title"
 
 const Container = styled.div`
   height: 100%;
@@ -7,15 +8,10 @@ const Container = styled.div`
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 24px 0 48px;
+  padding: 48px 0 60px;
 
-  h1 {
-    margin-bottom: 8px;
-    color: #fff;
-  }
-
+  h1,
   p {
-    margin-bottom: 40px;
     color: #fff;
   }
 
@@ -30,7 +26,8 @@ const Container = styled.div`
   label {
     font-family: Montserrat;
     text-align: left;
-    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
   }
 
   form {
@@ -51,7 +48,7 @@ const Container = styled.div`
     padding: 8px;
     border: 1px solid rgb(218, 218, 218);
     border-radius: 8px;
-    margin-bottom: 16px;
+    margin: 8px 0 16px;
   }
 
   form input::placeholder {
@@ -83,11 +80,10 @@ function Form() {
     <div>
       <Container>
         <div>
-          <h1>Quer criar sua loja?</h1>
-          <p>
-            Precisamos dos seus dados de contato para que possamos fazer o setup
-            da sua loja e incluí-la no nosso marketplace!
-          </p>
+          <Title
+            h1="Quer criar sua loja?"
+            p="Precisamos dos seus dados de contato pra que possamos fazer o setup da sua loja e incluí-la no nosso marketplace."
+          />
           <form>
             <label htmlFor="name-input">
               Nome

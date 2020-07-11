@@ -1,12 +1,14 @@
 import React from "react"
 import styled from "styled-components"
+import Title from "../components/title"
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px 0;
+  padding: 48px 0 60px;
+  background: #f6f6f6;
 `
 
 const Row = styled.div`
@@ -31,7 +33,8 @@ const Card = styled.div`
   -webkit-box-shadow: 1px 1px 10px 6px #888; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow: 1px 1px 10px 6px #888; /* Firefox 3.5 - 3.6 */
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 16px 24px;
+  border-radius: 16px;
 
   p {
     margin-top: 8px;
@@ -65,6 +68,10 @@ function Steps() {
   return (
     <div>
       <Container>
+        <Title
+          h1="É assim que a mágica acontece"
+          p="A gente tem tudo pra você criar seu próprio negócio."
+        ></Title>
         <Row>
           <Card>
             <h4>Comece criando seus produtos</h4>

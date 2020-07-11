@@ -70,9 +70,6 @@ function Header() {
         <ButtonContainer>
           <ul>
             <li>
-              <Link to="/como-funciona">Como funciona</Link>
-            </li>
-            <li>
               <Link to="/sobre-nos">Sobre nós</Link>
             </li>
             <li>Crie sua loja</li>

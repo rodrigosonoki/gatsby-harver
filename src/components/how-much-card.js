@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Title from "../components/title"
 
 import img1 from "../assets/card-img1.gif"
 
@@ -8,15 +9,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 0 48px;
-
-  h1 {
-    margin-bottom: 16px;
-  }
-
-  p {
-    margin-bottom: 24px;
-  }
+  padding: 48px 0 60px;
 `
 
 const Cards = styled.div`
@@ -46,6 +39,7 @@ const StyledCard = styled.div`
   p {
     font-weight: bold;
     font-family: Montserrat;
+    margin-bottom: 16px;
   }
 
   img {
@@ -57,7 +51,7 @@ const StyledCard = styled.div`
   h4 {
     text-align: center;
     color: #f17174;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 `
 
@@ -85,11 +79,10 @@ function HowMuchCard() {
   return (
     <div>
       <Container>
-        <h1>Quanto custa?</h1>
-        <p>
-          Você define o quanto quer ganhar. Nós só vamos cobrar o valor do
-          produto vendido (é sério!!!).
-        </p>
+        <Title
+          h1="Quanto custa?"
+          p="Você define o quanto quer ganhar. Nós só vamos cobrar o valor do produto vendido (é sério!!!)."
+        />
         <Cards>
           <Card img={img1} cardName="camiseta radical" />
           <Card img={img1} cardName="camiseta radical" />
