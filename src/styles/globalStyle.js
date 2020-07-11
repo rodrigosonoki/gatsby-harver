@@ -18,9 +18,22 @@ body {
 }
 
 h1 {
-font-size: 48px;
-font-family: Montserrat;
-font-weight: bold
+    font-size: 48px;
+    font-family: Montserrat;
+    font-weight: bold;
+    
+}
+
+h2 {
+    font-size: 36px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: bold;
 }
 
 p {

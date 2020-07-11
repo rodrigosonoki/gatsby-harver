@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const Container = styled.footer`
   background: #414960;
-  min-height: 320px;
+
   height: 100%;
   padding: 24px 60px;
   display: grid;
