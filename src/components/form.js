@@ -7,7 +7,7 @@ const Container = styled.div`
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 48px;
+  padding: 24px 0 48px;
 
   h1 {
     margin-bottom: 8px;
@@ -89,12 +89,22 @@ function Form() {
             da sua loja e incluí-la no nosso marketplace!
           </p>
           <form>
-            <label>Nome</label>
-            <input type="text" placeholder="Rodrigo Sonoki" />
-            <label>E-mail</label>
-            <input type="email" placeholder="rodrigo@harver.com.br" />
-            <label>WhatsApp</label>
-            <input type="tel" placeholder="(11)99725-0212" />
+            <label htmlFor="name-input">
+              Nome
+              <input id="name-input" type="text" placeholder="Rodrigo Sonoki" />
+            </label>
+            <label htmlFor="email-input">
+              E-mail
+              <input
+                id="email-input"
+                type="email"
+                placeholder="rodrigo@harver.com.br"
+              />
+            </label>
+            <label htmlFor="phone-input">
+              WhatsApp
+              <input id="phone-input" type="tel" placeholder="(11)99725-0212" />
+            </label>
             <button>ENVIAR</button>
           </form>
         </div>

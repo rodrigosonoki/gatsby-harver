@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../templates/layout"
 import Form from "../components/form"
+import HowMuchCard from "../components/how-much-card"
 
 export default () => (
   <div>
     <Layout>
+      <HowMuchCard></HowMuchCard>
       <Form />
-      <h1>This is a H1 tag.</h1>
-      <p>Hello, World!</p>
     </Layout>
   </div>
 )

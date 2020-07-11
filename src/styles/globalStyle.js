@@ -36,6 +36,12 @@ h3 {
     font-weight: bold;
 }
 
+h4 {
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
 p {
     font-size: 16px;
 }
