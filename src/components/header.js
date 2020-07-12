@@ -23,7 +23,7 @@ const Container = styled.header`
     justify-content: ${({ isVisible }) => (isVisible ? "" : "center")};
     width: ${({ isVisible }) => (isVisible ? "" : "100vw")};
     height: ${({ isVisible }) => (isVisible ? "" : "100vh")};
-    position: ${({ isVisible }) => (isVisible ? "" : "absolute")};
+
     top: ${({ isVisible }) => (isVisible ? "" : "0")};
     left: ${({ isVisible }) => (isVisible ? "" : "0")};
   }
