@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const Container = styled.header`
+const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,13 +17,11 @@ const Container = styled.header`
 
   @media only screen and (max-width: 680px) {
     height: 64px;
-
     /* <--FULL SCREEN--> */
     background-color: ${({ isVisible }) => (isVisible ? "" : "#f17174")};
     justify-content: ${({ isVisible }) => (isVisible ? "" : "center")};
     width: ${({ isVisible }) => (isVisible ? "" : "100vw")};
     height: ${({ isVisible }) => (isVisible ? "" : "100vh")};
-
     top: ${({ isVisible }) => (isVisible ? "" : "0")};
     left: ${({ isVisible }) => (isVisible ? "" : "0")};
   }

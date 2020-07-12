@@ -16,6 +16,13 @@ const Cards = styled.div`
   display: flex;
   width: 1008px;
   justify-content: space-between;
+
+  @media only screen and (max-width: 1040px) {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const StyledCard = styled.div`
