@@ -14,7 +14,8 @@ const Container = styled.div`
 
 const Cards = styled.div`
   display: flex;
-  width: 1008px;
+  width: 100%;
+  max-width: 1008px;
   justify-content: space-between;
 
   @media only screen and (max-width: 1040px) {

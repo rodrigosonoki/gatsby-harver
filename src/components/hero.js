@@ -16,22 +16,41 @@ const Container = styled.div`
   padding: 48px 0 60px;
 
   div {
-    margin: auto;
-    max-width: 1200px;
     display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 900px) {
+    display: flex;
+    height: 560px;
+    justify-content: center;
+
+    img {
+      display: none;
+    }
   }
 `
 
 const Title = styled.div`
   color: #fff;
-
   width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
 
   p {
     margin: 8px 0 16px;
     font-family: Montserrat;
     font-weight: 300;
     font-size: 18px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin: 8px 0 24px;
+    }
   }
 `
 
@@ -43,15 +62,14 @@ function Hero() {
           <Title>
             <h1>
               Crie.
-              <br />A gente cuida do resto.
-              <p>
-                A plataforma da Harver oferece uma solução completa pra você
-                começar a vender online.
-              </p>
-              <MainButton text="crie sua loja"></MainButton>
+              <br />A gente cuida do resto.{" "}
             </h1>
+            <p>
+              A plataforma da Harver oferece uma solução completa pra você
+              começar a vender online.
+            </p>
+            <MainButton text="crie sua loja" />
           </Title>
-
           <img src={imgBg} alt="man-standing" />
         </div>
       </Container>

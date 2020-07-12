@@ -17,7 +17,8 @@ const Cards = styled.div`
   height: 100%;
   align-items: center;
   text-align: center;
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
 `
 
 const StyledCard = styled.div`
