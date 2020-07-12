@@ -59,6 +59,7 @@ const ButtonContainer = styled.div`
 
   ul a {
     text-decoration: none;
+    color: #303030;
   }
 
   @media only screen and (max-width: 680px) {
