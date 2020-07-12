@@ -17,6 +17,10 @@ const Row = styled.div`
   align-items: center;
   max-width: 960px;
   width: 100%;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
 `
 
 const ReversedRow = styled.div`
@@ -25,6 +29,10 @@ const ReversedRow = styled.div`
   align-items: center;
   max-width: 960px;
   width: 100%;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 `
 
 const Card = styled.div`
@@ -36,9 +44,14 @@ const Card = styled.div`
   padding: 16px 24px;
   border-radius: 16px;
   background: #fff;
+
   p {
     margin-top: 8px;
     font-size: 12px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    margin: 0 0 16px;
   }
 `
 
@@ -57,6 +70,10 @@ const StepNumber = styled.div`
     font-size: 14px;
     font-weight: bold;
     color: #fff;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    margin: 0 0 16px;
   }
 `
 

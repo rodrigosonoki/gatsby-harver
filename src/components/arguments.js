@@ -19,6 +19,10 @@ const Cards = styled.div`
   text-align: center;
   width: 100%;
   max-width: 960px;
+
+  @media only screen and (max-width: 780px) {
+    flex-direction: column;
+  }
 `
 
 const StyledCard = styled.div`

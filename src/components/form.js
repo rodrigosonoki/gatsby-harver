@@ -42,7 +42,7 @@ const Container = styled.div`
     background: #fff;
     border-radius: 16px;
     padding: 48px;
-    width: 100%;
+    width: 80%;
     max-width: 640px;
     -webkit-box-shadow: 1px 1px 10px 6px #888; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow: 1px 1px 10px 6px #888; /* Firefox 3.5 - 3.6 */
@@ -83,6 +83,11 @@ const Container = styled.div`
     border-radius: 8px;
     cursor: pointer;
     margin-top: 8px;
+  }
+
+  @media only screen and (max-width: 690px) {
+    form {
+    }
   }
 `
 
@@ -132,7 +137,6 @@ function Form() {
               />
               {errors.exampleRequired && <span>This field is required</span>}
             </label>
-            <input type="submit" />
             <button>ENVIAR</button>
           </form>
         </div>

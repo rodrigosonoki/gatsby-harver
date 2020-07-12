@@ -20,7 +20,6 @@ const Cards = styled.div`
 
   @media only screen and (max-width: 1040px) {
     flex-direction: column;
-    margin: auto;
     justify-content: center;
     align-items: center;
   }
@@ -59,6 +58,10 @@ const StyledCard = styled.div`
   h4 {
     text-align: center;
     color: #f17174;
+    margin-bottom: 24px;
+  }
+
+  @media only screen and (max-width: 1040px) {
     margin-bottom: 24px;
   }
 `
