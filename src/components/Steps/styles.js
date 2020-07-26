@@ -34,7 +34,8 @@ export const ReversedRow = styled.div`
 `
 
 export const Card = styled.div`
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   height: 100%;
   -webkit-box-shadow: 1px 1px 10px 6px #888; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow: 1px 1px 10px 6px #888; /* Firefox 3.5 - 3.6 */
