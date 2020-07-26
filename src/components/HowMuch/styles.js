@@ -31,13 +31,6 @@ export const StyledCard = styled.div`
   -webkit-box-shadow: 1px 1px 10px 6px #888; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow: 1px 1px 10px 6px #888; /* Firefox 3.5 - 3.6 */
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-  filter: grayscale(100%);
-  transition: 0.3s;
-
-  &:hover {
-    filter: grayscale(0%);
-    transition: 0.3s;
-  }
 
   div {
     display: flex;

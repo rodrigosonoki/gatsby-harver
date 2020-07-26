@@ -13,7 +13,7 @@ export default () => (
   <div>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Harver - Crie e venda online!</title>
+      <title>Harver - Crie. A gente cuida do resto.</title>
     </Helmet>
     <Layout>
       <Hero />

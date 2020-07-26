@@ -9,7 +9,7 @@ export const Container = styled.div`
     rgba(255, 153, 102, 1) 0%,
     rgba(241, 113, 116, 1) 65%
   );
-  padding: 48px 0 60px;
+  padding: 48px 48px 60px 48px;
 
   div {
     display: flex;
@@ -44,6 +44,7 @@ export const Title = styled.div`
     text-align: center;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     p {
       margin: 8px 0 24px;
     }

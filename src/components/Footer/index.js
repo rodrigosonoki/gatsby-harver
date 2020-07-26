@@ -32,7 +32,7 @@ function Footer() {
             </svg>
           </div>
           <p>
-            © 2020 Harvey Tecnologia Ltda.<br></br>All rights reserved.
+            © 2020 Harver Tecnologia Ltda.<br></br>All rights reserved.
           </p>
         </Column>
         <Column>

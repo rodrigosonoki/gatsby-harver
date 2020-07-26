@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px 0 60px;
+  padding: 48px 48px 60px 48px;
 `
 
 export const Cards = styled.div`

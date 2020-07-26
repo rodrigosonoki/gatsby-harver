@@ -6,7 +6,7 @@ export const StyledButton = styled.button`
   border-radius: 8px;
   border: none;
   font-family: Montserrat;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #fa8b6b;
   -webkit-box-shadow: 1px 1px 10px 6px #888; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
