@@ -1,10 +1,6 @@
-import React from "react"
 import styled from "styled-components"
-import Title from "../components/title"
 
-import img1 from "../assets/card-img1.gif"
-
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,7 +8,7 @@ const Container = styled.div`
   padding: 48px 0 60px;
 `
 
-const Cards = styled.div`
+export const Cards = styled.div`
   display: flex;
   width: 100%;
   max-width: 1008px;
@@ -25,7 +21,7 @@ const Cards = styled.div`
   }
 `
 
-const StyledCard = styled.div`
+export const StyledCard = styled.div`
   height: 520px;
   width: 320px;
   height: 520px;
@@ -65,43 +61,3 @@ const StyledCard = styled.div`
     margin-bottom: 24px;
   }
 `
-
-const Card = props => (
-  <StyledCard>
-    {" "}
-    <img src={props.img} alt="t-shirt" />
-    <h4>{props.cardName}</h4>
-    <div>
-      <p>vc vende</p>
-      <p>R$99.00</p>
-    </div>
-    <div>
-      <p>vc paga</p>
-      <p>R$99.00</p>
-    </div>
-    <div>
-      <p>vc lucra</p>
-      <p>R$99.00</p>
-    </div>
-  </StyledCard>
-)
-
-function HowMuchCard() {
-  return (
-    <div>
-      <Container>
-        <Title
-          h1="Quanto custa?"
-          p="Você define o quanto quer ganhar. Nós só vamos cobrar o valor do produto vendido (é sério!!!)."
-        />
-        <Cards>
-          <Card img={img1} cardName="camiseta radical" />
-          <Card img={img1} cardName="camiseta radical" />
-          <Card img={img1} cardName="camiseta radical" />
-        </Cards>
-      </Container>
-    </div>
-  )
-}
-
-export default HowMuchCard

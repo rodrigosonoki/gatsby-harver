@@ -1,7 +1,6 @@
-import React from "react"
 import styled from "styled-components"
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   width: 214px;
   height: 48px;
   border-radius: 8px;
@@ -14,13 +13,3 @@ const StyledButton = styled.button`
   -moz-box-shadow: 1px 1px 10px 6px #888; /* Firefox 3.5 - 3.6 */
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 `
-
-function MainButton(props) {
-  return (
-    <div>
-      <StyledButton>{props.text}</StyledButton>
-    </div>
-  )
-}
-
-export default MainButton

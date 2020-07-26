@@ -1,10 +1,6 @@
-import React from "react"
 import styled from "styled-components"
-import MainButton from "../components/main-button"
 
-import imgBg from "../assets/homem-bg.png"
-
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   height: 800px;
   background: rgb(255, 153, 102);
@@ -31,7 +27,7 @@ const Container = styled.div`
   }
 `
 
-const Title = styled.div`
+export const Title = styled.div`
   color: #fff;
   width: 50%;
   flex-direction: column;
@@ -53,28 +49,3 @@ const Title = styled.div`
     }
   }
 `
-
-function Hero() {
-  return (
-    <div>
-      <Container>
-        <div>
-          <Title>
-            <h1>
-              Crie.
-              <br />A gente cuida do resto.{" "}
-            </h1>
-            <p>
-              A plataforma da Harver oferece uma solução completa pra você
-              começar a vender online.
-            </p>
-            <MainButton text="crie sua loja" />
-          </Title>
-          <img src={imgBg} alt="man-standing" />
-        </div>
-      </Container>
-    </div>
-  )
-}
-
-export default Hero

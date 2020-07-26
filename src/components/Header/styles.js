@@ -1,8 +1,6 @@
-import React, { useState } from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +25,7 @@ const Container = styled.div`
   }
 `
 
-const LogoContainer = styled.div`
+export const LogoContainer = styled.div`
   height: 48px;
   width: 48px;
   background: #f00;
@@ -37,7 +35,7 @@ const LogoContainer = styled.div`
   }
 `
 
-const ButtonContainer = styled.div`
+export const ButtonContainer = styled.div`
   display: flex;
 
   ul {
@@ -78,7 +76,7 @@ const ButtonContainer = styled.div`
   }
 `
 
-const BackgroundContainer = styled.div`
+export const BackgroundContainer = styled.div`
   width: 100%;
   height: 80px;
   transition: 0.2s;
@@ -89,7 +87,7 @@ const BackgroundContainer = styled.div`
   }
 `
 
-const ResponsiveMenu = styled.div`
+export const ResponsiveMenu = styled.div`
   @media (max-width: 680px) {
     width: 40px;
     height: 30px;
@@ -131,46 +129,3 @@ const ResponsiveMenu = styled.div`
     }
   }
 `
-
-function Header() {
-  const [isVisible, setIsVisible] = useState(true)
-  function toggleMenu() {
-    setIsVisible(!isVisible)
-    if (isVisible && window.innerWidth <= 680)
-      document.body.style.overflow = "hidden"
-    else document.body.style.overflow = "initial"
-  }
-  return (
-    <div>
-      <Container isVisible={isVisible}>
-        <LogoContainer isVisible={isVisible}>
-          <Link to="/">
-            <img
-              src="https://api.adorable.io/avatars/48/abott@adorable.png"
-              alt="brand-logo"
-            />
-          </Link>
-        </LogoContainer>
-
-        <ResponsiveMenu isVisible={isVisible} onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </ResponsiveMenu>
-        <ButtonContainer isVisible={isVisible}>
-          <ul>
-            <li>
-              <Link to="/sobre-nos">Sobre nós</Link>
-            </li>
-            <li>
-              <Link to="/sobre-nos">Crie sua loja</Link>
-            </li>
-          </ul>
-        </ButtonContainer>
-      </Container>
-      <BackgroundContainer />
-    </div>
-  )
-}
-
-export default Header
