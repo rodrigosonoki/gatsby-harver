@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+
 import MainButton from "../MainButton"
 
 import imgBg from "../../assets/homem-bg.png"

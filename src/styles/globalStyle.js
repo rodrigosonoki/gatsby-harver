@@ -2,6 +2,8 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400&display=swap');
+
 
 * {
 box-sizing: border-box;
@@ -11,33 +13,33 @@ padding: 0;
 
 body {
     background-color: #fff;
-    font-family: Poppins;
+font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
 }
 
 h1 {
     font-size: 48px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     
 }
 
 h2 {
     font-size: 36px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
 h3 {
     font-size: 24px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
 h4 {
     font-size: 18px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
