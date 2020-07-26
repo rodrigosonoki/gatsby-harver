@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import GlobalStyle from "../styles/GlobalStyle"
+import GlobalStyle from "../styles/globalStyle"
 
 function Layout({ children }) {
   return (
