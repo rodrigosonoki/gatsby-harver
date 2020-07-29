@@ -29,7 +29,7 @@ function Form() {
       .then(console.log(data))
       .then(response => response.json())
       .then(data => setApiResponse(data))
-      .then(console.log(process.env.API_URL))
+      .then(console.log(process.env.GATSBY_API_URL))
   }
 
   return (
