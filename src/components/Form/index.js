@@ -15,7 +15,7 @@ function Form() {
 
   //FUNCTIONS
   const onSubmit = data => {
-    fetch(process.env.API_URL, {
+    fetch(process.env.GATSBY_API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
