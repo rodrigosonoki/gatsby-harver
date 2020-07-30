@@ -38,10 +38,13 @@ function Header() {
         <ButtonContainer isVisible={isVisible}>
           <ul>
             <li>
-              <Link to="/sobre-nos">Sobre nós</Link>
-            </li>
-            <li>
-              <Link to="/sobre-nos">Crie sua loja</Link>
+              <a
+                href="https://app.harver.com.br"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Login
+              </a>
             </li>
           </ul>
         </ButtonContainer>

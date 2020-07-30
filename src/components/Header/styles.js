@@ -46,7 +46,7 @@ export const ButtonContainer = styled.div`
     font-family: Montserrat;
     font-weight: bold;
     justify-content: space-between;
-    width: 320px;
+    width: 100%;
   }
 
   ul li {
