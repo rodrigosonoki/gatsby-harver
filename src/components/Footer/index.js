@@ -39,7 +39,7 @@ function Footer() {
           <span>A Harver</span>
           <ul>
             <li>
-              <Link to="/como-funciona">Como funciona</Link>
+              <Link to="/">Como funciona</Link>
             </li>
             <li>
               <Link to="/sobre-nos">Sobre nós</Link>
