@@ -1,8 +1,8 @@
 import React from "react"
 
-import Title from "../Title"
+import Title from "../../../globalComponents/Title"
 
-import img1 from "../../assets/card-img1.gif"
+import img1 from "../../../../assets/card-img1.gif"
 
 import { Container, Cards, StyledCard } from "./styles"
 

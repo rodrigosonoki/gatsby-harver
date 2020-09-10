@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../templates/layout"
-import Form from "../components/Form"
-import HowMuchCard from "../components/HowMuch"
-import Steps from "../components/Steps"
-import Arguments from "../components/Arguments"
-import Hero from "../components/Hero"
+import Form from "../components/pageComponents/index/Steps/Form"
+import HowMuchCard from "../components/pageComponents/index/HowMuch"
+import Steps from "../components/pageComponents/index/Steps"
+import Arguments from "../components/pageComponents/index/Arguments"
+import Hero from "../components/pageComponents/index/Hero"
 
 //HELMET
 import { Helmet } from "react-helmet"

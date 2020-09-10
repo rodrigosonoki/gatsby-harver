@@ -1,6 +1,6 @@
 import React from "react"
-import Emoji from "../Emoji"
-import Title from "../Title"
+import Emoji from "../../../globalComponents/Emoji"
+import Title from "../../../globalComponents/Title"
 
 import { Container, Cards, StyledCard } from "./styles"
 

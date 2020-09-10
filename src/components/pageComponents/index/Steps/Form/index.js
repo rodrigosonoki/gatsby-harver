@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import { useForm } from "react-hook-form"
-import Title from "../Title"
+import Title from "../../../../globalComponents/Title"
 
 import { Container, Content, StyledCheck } from "./styles"
 

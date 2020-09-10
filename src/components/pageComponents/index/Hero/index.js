@@ -1,8 +1,8 @@
 import React from "react"
 
-import MainButton from "../MainButton"
+import MainButton from "../../../globalComponents/MainButton"
 
-import imgBg from "../../assets/homem-bg.png"
+import imgBg from "../../../../assets/homem-bg.png"
 
 import { Title, Container } from "./styles"
 

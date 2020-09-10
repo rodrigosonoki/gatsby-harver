@@ -17,7 +17,7 @@ body {
 
 h1 {
     font-size: 48px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     
 }

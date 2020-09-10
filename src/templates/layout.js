@@ -1,6 +1,6 @@
 import React from "react"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Header from "../components/globalComponents/Header"
+import Footer from "../components/globalComponents/Footer"
 import GlobalStyle from "../styles/globalStyle"
 
 function Layout({ children }) {
