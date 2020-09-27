@@ -18,6 +18,7 @@ export const Row = styled.div`
 
   @media only screen and (max-width: 1000px) {
     flex-direction: column-reverse;
+    padding: 0 24px;
   }
 `
 
@@ -30,6 +31,7 @@ export const ReversedRow = styled.div`
 
   @media only screen and (max-width: 1000px) {
     flex-direction: column;
+    padding: 0 24px;
   }
 `
 
@@ -50,7 +52,7 @@ export const Card = styled.div`
   }
 
   @media only screen and (max-width: 1000px) {
-    margin: 0 0 16px;
+    margin: 0 0 48px;
   }
 `
 

@@ -24,12 +24,12 @@ function Arguments() {
           <Card
             emoji="👕"
             title="Desenvolva seus produtos"
-            description="Crie sua conta grátis na Harver e use nossa plataforma pra criar seus produtos de forma rápida e fácil."
+            description="Crie sua arte e chame a gente no Instagram (@harverbrasil) ou pelo formulário abaixo!"
           ></Card>
           <Card
             emoji="💆🏻‍♂️"
             title="A gente faz a parte complicada"
-            description="A gente fica responsável por toda a parte da produção, recebimento e envio do pedido. Assim, você tem mais tempo pra fazer o que mais gosta.."
+            description="A gente fica responsável por toda a parte da produção, recebimento e envio do pedido."
           ></Card>
           <Card
             emoji="👩🏼‍💻"
