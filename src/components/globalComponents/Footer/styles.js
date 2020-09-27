@@ -17,6 +17,18 @@ export const Container = styled.footer`
 `
 
 export const Column = styled.div`
+  .logo {
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+  }
+
+  .social {
+    margin: 0;
+  }
+
   span {
     font-size: 16px;
     color: #fff;
@@ -51,7 +63,7 @@ export const Column = styled.div`
 
   div {
     fill: rgba(255, 255, 255, 0.5);
-    width: 148px;
+    /* width: 148px; */
     display: flex;
     justify-content: space-between;
   }

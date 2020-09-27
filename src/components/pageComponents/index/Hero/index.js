@@ -20,7 +20,7 @@ function Hero() {
               A plataforma da Harver oferece uma solução completa pra você
               começar a vender online.
             </p>
-            <MainButton text="crie sua loja" />
+            {/* <MainButton text="crie sua loja" /> */}
           </Title>
           <img src={imgBg} alt="man-standing" />
         </div>

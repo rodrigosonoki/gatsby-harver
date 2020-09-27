@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../templates/layout"
-import Form from "../components/pageComponents/index/Steps/Form"
+import Form from "../components/pageComponents/index/Form"
 import HowMuchCard from "../components/pageComponents/index/HowMuch"
 import Steps from "../components/pageComponents/index/Steps"
 import Arguments from "../components/pageComponents/index/Arguments"

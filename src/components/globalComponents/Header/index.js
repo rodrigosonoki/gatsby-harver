@@ -10,6 +10,8 @@ import {
   ResponsiveMenu,
 } from "./styles"
 
+import logo from "../../../assets/logo.png"
+
 function Header() {
   const [isVisible, setIsVisible] = useState(true)
   function toggleMenu() {
@@ -23,14 +25,11 @@ function Header() {
       <Container isVisible={isVisible}>
         <LogoContainer isVisible={isVisible}>
           <Link to="/">
-            <img
-              src="https://api.adorable.io/avatars/48/abott@adorable.png"
-              alt="brand-logo"
-            />
+            <img src={logo} alt="brand-logo" height="48px" />
           </Link>
         </LogoContainer>
 
-        <ResponsiveMenu isVisible={isVisible} onClick={toggleMenu}>
+        {/*         <ResponsiveMenu isVisible={isVisible} onClick={toggleMenu}>
           <div></div>
           <div></div>
           <div></div>
@@ -47,7 +46,7 @@ function Header() {
               </a>
             </li>
           </ul>
-        </ButtonContainer>
+        </ButtonContainer> */}
       </Container>
       <BackgroundContainer />
     </div>

@@ -18,7 +18,7 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 900px) {
     display: flex;
-    height: 560px;
+    height: 400px;
     justify-content: center;
 
     img {

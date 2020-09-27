@@ -1,7 +1,8 @@
 import React, { useState } from "react"
+import axios from "axios"
 
 import { useForm } from "react-hook-form"
-import Title from "../../../../globalComponents/Title"
+import Title from "../../../globalComponents/Title"
 
 import { Container, Content, StyledCheck } from "./styles"
 
@@ -14,28 +15,18 @@ function Form() {
   const [apiResponse, setApiResponse] = useState("")
 
   //FUNCTIONS
-  const onSubmit = data => {
-    fetch(process.env.GATSBY_API_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: "Rodrigo",
-        email: "rosonoki@gmail.com",
-        phone: "11997250212",
-      }),
-    })
-      .then(console.log(data))
-      .then(response => response.json())
-      .then(data => setApiResponse(data))
-      .then(console.log(process.env.GATSBY_API_URL))
+  const onSubmit = async data => {
+    const response = await axios.post(
+      "https://harver-api.herokuapp.com/lead/create",
+      data
+    )
+    setApiResponse(response)
   }
 
   return (
     <Container>
       {(() => {
-        if (apiResponse.code === "200") {
+        if (apiResponse.status === 200) {
           return (
             <Content>
               <StyledCheck>
@@ -69,7 +60,7 @@ function Form() {
             <div>
               <Title
                 h1="Quer criar sua loja?"
-                p="Precisamos dos seus dados de contato pra que possamos fazer o setup da sua loja e incluí-la no nosso marketplace."
+                p="Enquanto não terminamos de desenvolver nossa plataforma, estamos recebendo os pedidos através do formulário abaixo!"
               />
               <form onSubmit={handleSubmit(onSubmit)}>
                 <label htmlFor="name-input">
@@ -78,34 +69,32 @@ function Form() {
                     name="name"
                     id="name-input"
                     type="text"
-                    placeholder="Rodrigo Sonoki"
+                    placeholder="João das Neves"
                     ref={register({ required: true })}
                   />
+                  {errors.name && <span>O nome é obrigatório</span>}
                 </label>
-                {errors.exampleRequired && <span>This field is required</span>}
                 <label htmlFor="email-input">
                   E-mail
                   <input
                     name="email"
                     id="email-input"
                     type="email"
-                    placeholder="rodrigo@harver.com.br"
+                    placeholder="joao@snow.com"
                     ref={register({ required: true })}
                   />
+                  {errors.email && <span>O e-mail é obrigatório</span>}
                 </label>
-                {errors.exampleRequired && <span>This field is required</span>}
                 <label htmlFor="phone-input">
                   WhatsApp
                   <input
                     name="phone"
                     id="phone-input"
                     type="tel"
-                    placeholder="(11)99725-0212"
+                    placeholder="(11) 99999-9999"
                     ref={register({ required: true })}
                   />
-                  {errors.exampleRequired && (
-                    <span>This field is required</span>
-                  )}
+                  {errors.phone && <span>O WhatsApp é obrigatório</span>}
                 </label>
                 <button type="submit">ENVIAR</button>
               </form>

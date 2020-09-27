@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  height: 664px;
+  height: 764px;
   background: rgb(255, 153, 102);
   background: linear-gradient(
     144deg,
@@ -31,6 +31,12 @@ export const Container = styled.div`
     text-align: left;
     display: flex;
     flex-direction: column;
+
+    span {
+      font-size: 14px;
+      margin: auto;
+      color: #f44336;
+    }
   }
 
   form {
@@ -79,7 +85,7 @@ export const Container = styled.div`
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 16px;
   }
 
   @media only screen and (max-width: 690px) {

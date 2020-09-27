@@ -19,6 +19,10 @@ h1 {
     font-size: 48px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+
+    @media only screen and (max-width: 720px) {
+        font-size: 32px;
+    }
     
 }
 
